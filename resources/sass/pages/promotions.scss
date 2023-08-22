@@ -1,0 +1,163 @@
+#promotions-page {
+  background-color: #f7f7f7;
+
+  .main-section {
+    padding-top: 35px;
+    padding-bottom: 35px;
+
+    .col-page-title {
+      margin-bottom: 5px;
+    }
+
+    .col-promo {
+      margin-top: 10px;
+      margin-bottom: 10px;
+
+      .box-promo {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        overflow: hidden;
+        border-radius: 2px;
+        box-shadow: 0 0 3px rgba(0,0,0,0.2);
+        background-color: #ffffff;
+
+        .col-info {
+          padding: 25px 20px 25px 42px;
+          color: #221f1f;
+          align-self: center;
+
+          .title {
+            margin-bottom: 8px;
+            font-size: 1.75rem;
+          }
+
+          .subtitle {
+            margin-bottom: 20px;
+            color: #575555;
+            font-size: 1.15rem;
+            font-weight: 400;
+          }
+
+          .btn-s2 {
+            width: 300px;
+          }
+        }
+
+        .col-image {
+          padding: 0;
+          min-height: 240px;
+          align-self: stretch;
+          background-color: $soft-gray;
+        }
+      }
+    }
+
+    @media screen and (min-width: 992px) and (max-width: 1399px) {
+      .col-promo {
+        .box-promo {
+          .col-info {
+            .title {
+              font-size: 1.45rem;
+            }
+
+            .subtitle {
+              font-size: 1.05rem;
+            }
+          }
+        }
+      }
+    }
+    @media screen and (max-width: 991px) {
+      .col-promo {
+        .box-promo {
+          .col-info {
+            padding: 25px 25px 28px 25px;
+            text-align: center;
+          }
+        }
+      }
+    }
+    @media screen and (max-width: 767px) {
+      .col-page-title {
+        margin-bottom: 0;
+      }
+
+      .col-promo {
+        margin-top: 15px;
+        margin-bottom: 15px;
+
+        .box-promo {
+          .col-info {
+            .title {
+              font-size: 1.35rem;
+            }
+
+            .subtitle {
+              font-size: 1.05rem;
+            }
+
+            .btn-s2 {
+              padding: 0.5rem 0.75rem 0.55rem 0.75rem;
+              font-size: 0.90rem;
+            }
+          }
+
+          .col-image {
+            min-height: 150px;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+#promotion-page {
+
+  .banner-section {
+    height: 370px;
+    // background-color: $soft-gray;
+
+    .box {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .main-section {
+    padding-top: 25px;
+    padding-bottom: 30px;
+    color: #221f1f;
+    text-align: justify;
+
+    .title {
+      margin-bottom: 8px;
+      font-size: 1.80rem;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    .subtitle {
+      text-align: center;
+      font-weight: 300;
+    }
+
+    .box-descr {
+      display: block;
+      padding-top: 20px;
+      font-size: 0.95rem;
+      line-height: 1.25;
+
+      a {
+        color: $red;
+      }
+
+      ul, ol {
+        padding-left: 15px;
+      }
+    }
+  }
+
+}

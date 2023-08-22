@@ -1,0 +1,74 @@
+.form-search-s1 {
+  display: flex;
+  flex-flow: row wrap;
+  flex-wrap: wrap;
+  align-items: center;
+
+  .form-group {
+    margin-right: 15px;
+    margin-bottom: 0;
+    flex: 0 0 calc(100% - 215px);
+    max-width: calc(100% - 215px);
+
+    >div {
+      position: relative;
+      width: 100%;
+      @include placeholder(#9b9b9b, 400, normal, 1.1rem);
+
+      .form-control {
+        padding-left: 42px;
+        width: 100%;
+        height: 44px;
+        font-size: 1.1rem;
+        border-color: #9b9b9b;
+        border-radius: 0;
+      }
+
+      &:before {
+        content: "\f002";
+        position: absolute;
+        top: 6px;
+        left: 13px;
+        color: #9b9b9b;
+        font-family: "Font Awesome 5 Pro";
+        font-size: 1.3rem;
+        font-weight: 300;
+        z-index: 5;
+      }
+    }
+  }
+
+  .btn-s1 {
+    width: 200px;
+  }
+
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    .form-group {
+      flex: 0 0 calc(100% - 165px);
+      max-width: calc(100% - 165px);
+    }
+
+    .btn-s1 {
+      width: 150px;
+    }
+  }
+  @media screen and (max-width: 575px) {
+    .form-group {
+      margin-right: 0;
+      flex: 0 0 calc(100% - 110px);
+      max-width: calc(100% - 110px);
+
+      >div {
+        .form-control {
+          border-radius: 25px 0 0 25px;
+          border-right: 0;
+        }
+      }
+    }
+
+    .btn-s1 {
+      width: 110px;
+      border-radius: 0 25px 25px 0;
+    }
+  }
+}

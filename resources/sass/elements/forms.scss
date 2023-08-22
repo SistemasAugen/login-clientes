@@ -1,0 +1,21 @@
+.form-group-s1 {
+  margin-bottom: 1.15rem;
+
+  label, legend {
+    padding-bottom: 2px;
+    color: #3e3e3e;
+    font-size: 1.05rem;
+    font-weight: 600;
+  }
+
+  >div {
+    .form-control {
+      padding: 0.5rem 1.35rem;
+      height: inherit;
+      resize: none;
+      border: 1px solid $redLight;
+      border-radius: 0;
+      background-color: transparent !important;
+    }
+  }
+}

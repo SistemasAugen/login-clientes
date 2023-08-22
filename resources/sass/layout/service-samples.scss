@@ -1,0 +1,42 @@
+.box-service-sample-1 {
+  .box {
+    position: relative;
+    display: block;
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+
+    &:before {
+      content: " ";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .box-text {
+      position: absolute;
+      padding: 0 18px;
+      bottom: 12px;
+      left: 0;
+      z-index: 5;
+
+      h5 {
+        color: #ffffff;
+        font-size: 1.9rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+      }
+    }
+  }
+
+  &.x-h {
+    .box {
+      height: 450px;
+    }
+  }
+}

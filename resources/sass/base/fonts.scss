@@ -1,0 +1,38 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+.f-w-300 {
+  font-weight: 300 !important;
+}
+.f-w-400 {
+  font-weight: 400 !important;
+}
+.f-w-500 {
+  font-weight: 500 !important;
+}
+.f-w-600 {
+  font-weight: 600 !important;
+}
+.f-w-700 {
+  font-weight: 700 !important;
+}
+.f-w-800 {
+  font-weight: 800 !important;
+}
+
+.txt-red {
+  color: $red;
+}
+.txt-redl {
+  color: $redLight;
+}
+
+.link-s1 {
+  color: $redLight;
+  font-size: 1.05rem;
+  font-weight: 600;
+
+  &:hover {
+    color: $redLight2;
+  }
+}

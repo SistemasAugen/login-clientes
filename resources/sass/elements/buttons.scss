@@ -1,0 +1,61 @@
+.btn-s1 {
+  display: inline-block;
+  padding: 0.45rem 0.9rem;
+  width: 180px;
+  max-width: 100%;
+  min-height: 44px;
+  cursor: pointer;
+  font-weight: 400;
+  line-height: 1.7;
+  text-decoration: none !important;
+  border-radius: 25px;
+  outline: none !important;
+  box-shadow: none !important;
+
+  &.txt-lg{
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+
+  &.bg-red {
+    color: #ffffff !important;
+    border-color: $red;
+    background-color: $red;
+
+    &:hover, &:focus, &:active {
+      border-color: $red2 !important;
+      background-color: $red2 !important;
+    }
+  }
+
+  &.outline-red {
+    color: $redLight;
+    border-color: $redLight;
+    background-color: transparent !important;
+
+    &:hover, &:focus, &:active {
+      color: $redLight2 !important;
+      border-color: $redLight2 !important;
+    }
+  }
+}
+
+.btn-s2 {
+  padding: 0.6rem 0.75rem 0.65rem 0.75rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  min-width: 160px;
+  max-width: 100%;
+
+  &.bg-redl {
+    color: #ffffff !important;
+    border-color: $redLight;
+    background-color: $redLight;
+
+    &:hover, &:focus, &:active {
+      border-color: $redLight2 !important;
+      background-color: $redLight2 !important;
+    }
+  }
+}
